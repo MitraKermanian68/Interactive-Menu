@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Menu</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./menu.webp" class="menu_icon" onclick="openmenu()"/>
+      <div class="menu_box" id="menu">
+        <div class="right_links">
+          <a href="#">Get Started</a>
+          <img src="./close.png" onclick="closemenu()"/>
+        </div>
+        <div class="left_links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Our Services</a>
+          <a href="#">Products</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuBox = document.getElementById("menu");
+
+      function closemenu(){
+          menuBox.style.top = "-100vh";
+      }
+      function openmenu(){
+          menuBox.style.top = "17%";
+      }
+    </script>
+  </body>
+</html>
